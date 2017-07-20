@@ -44,7 +44,7 @@ export default function calulate(obj, buttonName) {
         if(obj.operation) return { next: '0.' };
 
         //no operation
-        if(obj.total) return obj.total.includes('.') ? {} : {total: object.total + '.'};
+        if(obj.total) return obj.total.includes('.') ? {} : {total: obj.total + '.'};
 
         return {total: '0.'};
     }
